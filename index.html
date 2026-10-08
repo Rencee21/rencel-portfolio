@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rencel Guan | Computer Science Student and Aspiring Developer</title>
+  <meta name="description" content="Portfolio of Rencel F. Guan, a Computer Science student in the Philippines interested in software development, web development, and automation.">
+
+  <!-- Fonts (optional: the site still works if these fail to load) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;600;800&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+
+  <!-- CSS lives in style.css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =====================================================================
+     HOW THIS FILE IS ORGANIZED
+     Each section starts with a banner like this one. Search for the words
+     "EDIT HERE" to find the places you will most likely change.
+       1. Navigation       5. Booking (GoHighLevel calendar)
+       2. Hero             6. Opt-In / Contact form (Google Sheets)
+       3. About            7. Contact details
+       4. Skills + Projects 8. Footer
+     Settings such as your Google Sheets URL are in script.js, not here.
+     ===================================================================== -->
+
+
+<!-- ============================ 1. NAVIGATION ============================ -->
+<header class="nav" id="nav" data-open="false">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top"><span class="brand-mark">RG</span>Rencel Guan</a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <nav class="nav-links" id="navLinks" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-primary btn-small nav-cta" href="#booking">Book a Consultation</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============================== 2. HERO ============================== -->
+<section class="hero">
+  <div class="wrap hero-grid">
+
+    <div class="hero-copy">
+      <p class="eyebrow">Computer Science · Philippines</p>
+      <h1>Rencel F. Guan</h1>
+      <p class="hero-title">Computer Science Student | Aspiring Developer</p>
+      <p class="hero-text">I'm a Computer Science student who likes turning ideas into working software, from websites and mobile apps to small automations that save time. I'm always learning, and I build things to learn faster.</p>
+      <div class="hero-actions">
+        <a class="btn btn-ghost" href="#skills">View My Skills</a>
+        <a class="btn btn-primary" href="#booking">Book a Consultation</a>
+        <a class="btn btn-ghost" href="#contact">Contact Me</a>
+      </div>
+    </div>
+
+    <!-- EDIT HERE: PROFILE PICTURE
+         Easiest way: put your photo URL in PROFILE_IMAGE_URL inside script.js.
+         Until then, the "RG" placeholder below is shown. -->
+    <div class="photo">
+      <div class="photo-frame">
+        <div class="photo-placeholder" id="photoPlaceholder">
+          <b>RG</b>
+          <small>Profile picture placeholder</small>
+        </div>
+        <img id="profileImage" alt="Portrait of Rencel F. Guan" hidden>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================== 3. ABOUT ============================== -->
+<section class="section section-alt" id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">About me</p>
+      <h2>Curious, hands-on, and still learning.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <!-- EDIT HERE: change these paragraphs to tell your own story -->
+        <p>Hi, I'm Rencel, a Computer Science student at City College of Calamba in the Philippines. I got into computing because I like understanding how things work, and then making them work a little better.</p>
+        <p>I'm interested in software development, web development, automation, and technology in general. Most of what I learn sticks when I build something real with it, so my projects range from web pages to a hardware-and-mobile system that listens for termites.</p>
+        <p>I'm looking for chances to keep learning with real people on real projects: internships, small client work, and collaborations.</p>
+      </div>
+      <div class="about-card">
+        <h3>Quick facts</h3>
+        <dl>
+          <div><dt>Studying</dt><dd>BS in Computer Science</dd></div>
+          <div><dt>School</dt><dd>City College of Calamba</dd></div>
+          <div><dt>Location</dt><dd>Philippines</dd></div>
+          <div><dt>Interested in</dt><dd>Software, web, automation</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================== 4a. SKILLS ============================== -->
+<section class="section" id="skills">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Skills</p>
+      <h2>What I work with.</h2>
+      <p>Tools and techniques I use in my coursework and personal projects.</p>
+    </div>
+
+    <!-- EDIT HERE: to add a skill, copy one <article> block and change the text -->
+    <div class="skill-grid">
+      <article class="skill-card"><h3>HTML</h3><p>Structuring pages and content for my websites.</p></article>
+      <article class="skill-card"><h3>CSS</h3><p>Layout, styling, and visual polish.</p></article>
+      <article class="skill-card"><h3>JavaScript</h3><p>Adding interactivity and behavior to web pages.</p></article>
+      <article class="skill-card"><h3>Flutter / Dart</h3><p>Building mobile apps that run on more than one platform.</p></article>
+      <article class="skill-card"><h3>Firebase</h3><p>Realtime data and cloud services for my apps.</p></article>
+      <article class="skill-card"><h3>Python</h3><p>Scripting, data work, and machine learning experiments.</p></article>
+      <article class="skill-card"><h3>C / C++</h3><p>Programming microcontrollers and course projects.</p></article>
+      <article class="skill-card"><h3>SQL</h3><p>Querying and organizing data in relational databases.</p></article>
+      <article class="skill-card"><h3>Git / GitHub</h3><p>Version control and sharing my code.</p></article>
+      <article class="skill-card"><h3>GoHighLevel</h3><p>Setting up calendars, forms, and pages.</p></article>
+      <article class="skill-card"><h3>Workflow Automation</h3><p>Connecting steps so repetitive tasks run on their own.</p></article>
+      <article class="skill-card"><h3>API Integration</h3><p>Connecting apps and services so they share data.</p></article>
+      <article class="skill-card"><h3>Basic Machine Learning</h3><p>Training and testing simple models on real data.</p></article>
+      <article class="skill-card"><h3>Responsive Web Design</h3><p>Making pages work on phones, tablets, and desktops.</p></article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================== 4b. PROJECTS ============================== -->
+<section class="section section-alt" id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Projects</p>
+      <h2>Things I've built.</h2>
+      <p>One featured project, plus placeholders you can fill in as you finish new ones.</p>
+    </div>
+
+    <!-- FEATURED PROJECT -->
+    <article class="featured">
+      <div class="featured-text">
+        <span class="badge">Featured project</span>
+        <h3>Termiguard – Wood Infrastructure Termite Infestation Detection System</h3>
+        <p>A mobile and hardware-based system designed to detect termite activity in wooden structures using an ESP32, acoustic data, Firebase, Flutter, and machine learning.</p>
+        <ul class="tags">
+          <li>ESP32</li><li>Flutter</li><li>Firebase</li><li>Python</li><li>Machine Learning</li>
+        </ul>
+        <!-- EDIT HERE: replace "#" with your project link (GitHub repo, demo, or write-up) -->
+        <a class="btn btn-primary js-project-link" href="https://github.com/Rencee21/Termiguard">View Project</a>
+      </div>
+
+      <!-- EDIT HERE: PROJECT IMAGE
+           To use your own picture, delete the <svg> line below and put in:
+           <img src="images/termiguard.jpg" alt="Termiguard system"> -->
+      <figure class="media">
+        <svg id="spectrumSvg" role="img" aria-label="Illustration of an audio spectrum with a highlighted band between 3 and 5 kilohertz"></svg>
+        <figcaption>Illustration only: the sensor listens for energy in a 3–5 kHz band. Not measured data.</figcaption>
+      </figure>
+    </article>
+
+    <!-- OTHER PROJECTS (placeholders). To add a project, copy one <article class="project"> block. -->
+    <div class="project-grid">
+      <article class="project">
+        <svg id="calamsaysayanSvg" role="img" aria-label="Calamsaysayan character"></svg>
+        <h3>Calamsaysayan</h3>
+        <p>A 2D mobile mystery game inspired by the history and landmarks of Calamba, Laguna. Players explore locations, solve puzzles, and uncover local stories while learning about the city’s culture and history.</p>
+        <ul class="tags"><li>Godot 4</li><li>GDScript</li><li>A* Pathfinding</li><li>FSM</li><li>2D Game Development</li><li>Mobile Development</li></ul>
+        <a class="btn btn-ghost btn-small js-project-link" href="https://github.com/Rencee21/Calamsaysayan">View Project</a>
+      </article>
+      <article class="project">
+        <svg id="biniconSvg"       role="img" aria-label="BINICON logo"></svg>
+        <h3>BINICON Concert Reservation</h3>
+        <p>BINICON Concert Reservation is a web-based concert reservation and ticketing system that allows users to browse concert details, select available tickets, and make reservations through an organized and user-friendly interface.</p>
+        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Web Development</li><li>UI/UX Design</li>
+          <li>Reservation System</li><li>XAMPP</li></ul>
+        <a class="btn btn-ghost btn-small js-project-link" href="https://github.com/Rencee21/BINICON_Reservation">View Project</a>
+      </article>
+      <article class="project">
+        <svg id="nullCoffeeSvg"    role="img" aria-label="Null Coffee cup"></svg>
+        <h3>Null Coffee</h3>
+        <p>Null Coffee is a modern coffee shop website designed to showcase coffee products, provide information about the shop, and give customers a simple and engaging browsing experience.</p>
+        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Web Development</li><li>UI/UX Design</li></ul>
+        <a class="btn btn-ghost btn-small js-project-link" href="https://github.com/Rencee21/Null-Coffee">View Project</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     5. BOOKING  –  GOHIGHLEVEL (GHL) CALENDAR
+     The calendar itself comes from GoHighLevel. Everything around it
+     (title, text, card, colors) is part of this portfolio.
+     ============================================================ -->
+<section class="section booking" id="booking">
+  <div class="wrap booking-grid">
+
+    <div class="booking-intro">
+      <p class="eyebrow">Booking</p>
+      <h2>Book a Consultation</h2>
+      <p>Want to talk about a project, an internship, or a collaboration? Pick a time that works for you.</p>
+
+      <div class="fcfs">
+        <h3>First come, first served</h3>
+        <p>Appointments are given in the order they are booked. Once someone books a time, it disappears from the calendar for everyone else.</p>
+      </div>
+
+      <ol class="how">
+        <li>Choose an available date and time.</li>
+        <li>Enter your name, email, phone number, and the reason for booking. Adding a message is optional.</li>
+        <li>You'll see a confirmation right after you book.</li>
+      </ol>
+    </div>
+
+    <div class="ghl-embed" id="ghlCalendarEmbed">
+      <div class="ghl-embed-bar"><span>Available times</span><span>Philippine Time (UTC+8)</span></div>
+      <div class="ghl-embed-body" id="ghlBody">
+
+        <!-- ====================================================================
+             GHL BOOKING CALENDAR EMBED HERE
+             EDIT HERE. Choose ONE of these two options:
+
+             Option A: paste your GHL calendar embed code on the line below
+               (the <iframe ...> line and the <script ...> line GHL gives you),
+               then delete the "ghl-placeholder" box underneath.
+
+             Option B: leave this area alone and put your calendar link in
+               GHL_CALENDAR_URL inside script.js. The page will build the
+               calendar for you.
+             ==================================================================== -->
+        <!-- GHL BOOKING CALENDAR EMBED HERE -->
+
+        <iframe src="https://api.leadconnectorhq.com/widget/booking/v45PxrRA04uElBN1K2Vx" allow="payment" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="v45PxrRA04uElBN1K2Vx_1791460312743"></iframe><br><script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+
+        <div class="ghl-placeholder" id="ghlPlaceholder">
+          <b>Your GoHighLevel calendar will appear here</b>
+          <p>Paste the embed code in index.html, or set <code>GHL_CALENDAR_URL</code> in script.js.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     6. OPT-IN / CONTACT FORM  –  GOOGLE SHEETS
+     Submitting this form sends the details to your Google Apps Script
+     web app, which adds a row to your Google Sheet.
+     The web app address is set in script.js (GOOGLE_SHEETS_API_URL).
+     ============================================================ -->
+<section class="section" id="connect">
+  <div class="wrap connect-grid">
+
+    <div class="connect-intro">
+      <p class="eyebrow">Opt-in &amp; contact form</p>
+      <h2>Let's Connect</h2>
+      <p>If you have an opportunity, a project, or a question, send me a message. You can also use this form to be contacted about updates.</p>
+    </div>
+
+    <div class="form-wrap">
+      <form class="form-card" id="optinForm" novalidate>
+        <div class="field">
+          <label for="fullName">Full Name</label>
+          <input id="fullName" name="fullName" type="text" autocomplete="name" placeholder="Your full name" required>
+        </div>
+        <div class="row-two">
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+63 900 000 0000" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="How can I help?" required></textarea>
+        </div>
+
+        <!-- Spam trap: real visitors never see or fill this field. Do not remove. -->
+        <div class="trap" aria-hidden="true">
+          <label for="website">Leave this field empty</label>
+          <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <label class="check" for="consent">
+          <input id="consent" name="consent" type="checkbox" required>
+          <span>I agree to be contacted regarding my inquiry.</span>
+        </label>
+
+        <div>
+          <button class="btn btn-primary" type="submit" id="submitBtn">Submit</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+
+      <!-- Shown after a successful submit -->
+      <div class="success" id="formSuccess" hidden>
+        <span class="tick" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+        </span>
+        <h3>Thank you<span id="successName"></span>!</h3>
+        <p>Your message has been received. I'll get back to you at the email or phone number you shared.</p>
+        <button class="btn btn-ghost btn-small" type="button" id="sendAnother">Send another message</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================== 7. CONTACT DETAILS ============================== -->
+<section class="section section-alt" id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Contact</p>
+      <h2>Other ways to reach me.</h2>
+    </div>
+
+    <!-- EDIT HERE: replace each placeholder with your real details -->
+    <ul class="contact-grid">
+      <li><span class="label">Email: </span><a href="mailto:rencelguan.gmail.com">rencelguan@gmail.com</a></li>
+      <li><span class="label">Phone: </span><a href="tel:+639457642180">+63 945 7642 180</a></li>
+      <li><span class="label">Location: </span><span>Philippines</span></li>
+      <li><span class="label">GitHub: </span><a href="https://github.com/Rencee21" target="_blank" rel="noopener noreferrer">Rencee21</a></li>
+      <li><span class="label">LinkedIn: </span><a href="www.linkedin.com/in/rencel-guan-b8579643b" target="_blank" rel="noopener noreferrer">Rencel Guan</a></li>
+      <li><span class="label">Facebook: </span><a href="https://www.facebook.com/share/1FYkhZ9Njs/" target="_blank" rel="noopener noreferrer">Rencel Guan</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+
+<!-- ============================== 8. FOOTER ============================== -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div>
+      <strong>Rencel F. Guan</strong>
+      <p>Computer Science Student | Aspiring Developer</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#booking">Book</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+  <div class="wrap"><p class="copyright">© 2026 Rencel F. Guan. All Rights Reserved.</p></div>
+</footer>
+
+<!-- JavaScript lives in script.js (settings are at the top of that file) -->
+<script src="script.js"></script>
+</body>
+</html>
